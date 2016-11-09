@@ -437,6 +437,10 @@
 					>
 				</File>
 				<File
+					RelativePath=".\ffmpeg\include\avutil.h"
+					>
+				</File>
+				<File
 					RelativePath=".\ffmpeg\include\bitstream.h"
 					>
 				</File>
@@ -449,7 +453,15 @@
 					>
 				</File>
 				<File
+					RelativePath=".\ffmpeg\include\colorspace.h"
+					>
+				</File>
+				<File
 					RelativePath=".\ffmpeg\include\common.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\crc.h"
 					>
 				</File>
 				<File
@@ -458,6 +470,14 @@
 				</File>
 				<File
 					RelativePath=".\ffmpeg\include\dsputil.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\eval.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\faandct.h"
 					>
 				</File>
 				<File
@@ -477,7 +497,23 @@
 					>
 				</File>
 				<File
+					RelativePath=".\ffmpeg\include\h264pred.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\imgconvert.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\integer.h"
+					>
+				</File>
+				<File
 					RelativePath=".\ffmpeg\include\internal.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\intfloat_readwrite.h"
 					>
 				</File>
 				<File
@@ -489,11 +525,59 @@
 					>
 				</File>
 				<File
+					RelativePath=".\ffmpeg\include\mathematics.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\mem.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\mpeg12data.h"
+					>
+				</File>
+				<File
 					RelativePath=".\ffmpeg\include\mpegvideo.h"
 					>
 				</File>
 				<File
+					RelativePath=".\ffmpeg\include\mpegvideo_common.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\msmpeg4.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\opt.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\parser.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\ratecontrol.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\rational.h"
+					>
+				</File>
+				<File
 					RelativePath=".\ffmpeg\include\rectangle.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\rl.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\simple_idct.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\include\x86_cpu.h"
 					>
 				</File>
 			</Filter>
@@ -513,7 +597,31 @@
 					</FileConfiguration>
 				</File>
 				<File
+					RelativePath=".\ffmpeg\source\cabac.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
 					RelativePath=".\ffmpeg\source\dsputil.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\error_resilience.c"
 					>
 					<FileConfiguration
 						Name="Debug|Win32"
@@ -561,7 +669,67 @@
 					</FileConfiguration>
 				</File>
 				<File
+					RelativePath=".\ffmpeg\source\h264idct.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\h264pred.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\imgconvert.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\jrevdct.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
 					RelativePath=".\ffmpeg\source\log.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\mem.c"
 					>
 					<FileConfiguration
 						Name="Debug|Win32"
@@ -584,12 +752,92 @@
 						/>
 					</FileConfiguration>
 				</File>
+				<File
+					RelativePath=".\ffmpeg\source\opt.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\parser.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\rational.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\simple_idct.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\svq3.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\utils.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath=".\ffmpeg\source\vp3dsp.c"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
 			</Filter>
 		</Filter>
-		<File
-			RelativePath=".\ClassDiagram1.cd"
-			>
-		</File>
 		<File
 			RelativePath=".\ReadMe.txt"
 			>
