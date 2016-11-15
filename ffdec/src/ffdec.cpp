@@ -25,5 +25,17 @@ FFDEC_API int np_ffdec_init(NPFFDEC_ID id)
 		ffID = CODEC_ID_H264;
 
 	avcodec_find_decoder(ffID);
-	return 42;
+	return 0;
+}
+
+FFDEC_API int ffdec_frame(NP_FF_DEC pff,unsigned char* bs,int len)
+{
+	pff.ff_codec = &h264_decoder;
+	pff.ff_ct = avcodec_alloc_context();
+	return 0;
+}
+
+FFDEC_API void ffdec_destroy(NP_FF_DEC pff)
+{
+
 }

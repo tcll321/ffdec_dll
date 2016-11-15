@@ -44,4 +44,18 @@ typedef enum
 	FFDEC_ID_PCM_ALAW,
 } NPFFDEC_ID;
 
+typedef struct
+{
+	void* ff_ct;   //实现者使用
+	void* ff_codec;//实现者使用
+	void* ff_frame;//实现者使用
+	int   isAudio; //实现者使用
+	void* data;	//yuv or pcm16 数据 
+	int   size; //yuv or pcm16 数据大小 (bytes)
+	unsigned short width; 
+	unsigned short height; 
+} NP_FF_DEC, *PNP_FF_DEC;
+
 FFDEC_API int np_ffdec_init(NPFFDEC_ID id);
+FFDEC_API int ffdec_frame(NP_FF_DEC pff,unsigned char* bs,int len);
+FFDEC_API void ffdec_destroy(NP_FF_DEC pff);

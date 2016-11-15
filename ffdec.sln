@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffdec", "ffdec\ffdec.vcproj", "{1F7E909A-FFCA-4CF8-AFC7-BF694D1B1F0E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffdec_testWin32", "ffdec_testWin32\ffdec_testWin32.vcproj", "{6FE0D818-E094-4301-BE3C-359F28EC92D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1F7E909A-FFCA-4CF8-AFC7-BF694D1B1F0E} = {1F7E909A-FFCA-4CF8-AFC7-BF694D1B1F0E}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +24,12 @@ Global
 		{1F7E909A-FFCA-4CF8-AFC7-BF694D1B1F0E}.Release|Win32.Build.0 = Release|Win32
 		{1F7E909A-FFCA-4CF8-AFC7-BF694D1B1F0E}.Release|x64.ActiveCfg = Release|x64
 		{1F7E909A-FFCA-4CF8-AFC7-BF694D1B1F0E}.Release|x64.Build.0 = Release|x64
+		{6FE0D818-E094-4301-BE3C-359F28EC92D3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6FE0D818-E094-4301-BE3C-359F28EC92D3}.Debug|Win32.Build.0 = Debug|Win32
+		{6FE0D818-E094-4301-BE3C-359F28EC92D3}.Debug|x64.ActiveCfg = Debug|Win32
+		{6FE0D818-E094-4301-BE3C-359F28EC92D3}.Release|Win32.ActiveCfg = Release|Win32
+		{6FE0D818-E094-4301-BE3C-359F28EC92D3}.Release|Win32.Build.0 = Release|Win32
+		{6FE0D818-E094-4301-BE3C-359F28EC92D3}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
