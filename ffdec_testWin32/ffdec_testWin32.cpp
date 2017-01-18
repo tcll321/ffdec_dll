@@ -11,4 +11,3 @@ int _tmain(int argc, _TCHAR* argv[])
 	ret = np_ffdec_init(FFDEC_ID_H264);
 	return 0;
 }
-

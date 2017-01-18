@@ -30,12 +30,35 @@ FFDEC_API int np_ffdec_init(NPFFDEC_ID id)
 
 FFDEC_API int ffdec_frame(NP_FF_DEC pff,unsigned char* bs,int len)
 {
-	pff.ff_codec = &h264_decoder;
-	pff.ff_ct = avcodec_alloc_context();
+	AVCodec* pDecoder = NULL;
+	AVCodecContext* pContext = NULL;
+	AVFrame* pFrame = NULL;
+	if (NULL == pff.ff_codec)
+		pff.ff_codec = &h264_decoder;
+	if (NULL == pff.ff_ct)
+		pff.ff_ct = avcodec_alloc_context();
+	if (NULL == pff.ff_frame)
+		pff.ff_frame = avcodec_alloc_frame();
+
+	pDecoder = (AVCodec*)pff.ff_codec;
+	pContext = (AVCodecContext*)pff.ff_ct;
+	pFrame = (AVFrame*)pff.ff_frame;
+
+	pDecoder->decode(pContext, pff.data, &pff.size, bs, len);
+
 	return 0;
 }
 
 FFDEC_API void ffdec_destroy(NP_FF_DEC pff)
 {
-
+	if (pff.ff_ct)
+	{
+		av_free(pff.ff_ct);
+		pff.ff_ct = NULL;
+	}
+	if (pff.ff_frame)
+	{
+		av_free(pff.ff_frame);
+		pff.ff_frame = NULL;
+	}
 }
