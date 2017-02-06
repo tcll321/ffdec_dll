@@ -28,7 +28,7 @@ FFDEC_API int np_ffdec_init(NPFFDEC_ID id)
 	return 0;
 }
 
-FFDEC_API int ffdec_frame(NP_FF_DEC pff,unsigned char* bs,int len)
+FFDEC_API int np_ffdec_frame(NP_FF_DEC pff,unsigned char* bs,int len)
 {
 	AVCodec* pDecoder = NULL;
 	AVCodecContext* pContext = NULL;
@@ -44,12 +44,13 @@ FFDEC_API int ffdec_frame(NP_FF_DEC pff,unsigned char* bs,int len)
 	pContext = (AVCodecContext*)pff.ff_ct;
 	pFrame = (AVFrame*)pff.ff_frame;
 
+	pDecoder->init(pContext);
 	pDecoder->decode(pContext, pff.data, &pff.size, bs, len);
 
 	return 0;
 }
 
-FFDEC_API void ffdec_destroy(NP_FF_DEC pff)
+FFDEC_API void np_ffdec_destroy(NP_FF_DEC pff)
 {
 	if (pff.ff_ct)
 	{

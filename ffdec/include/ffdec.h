@@ -57,5 +57,5 @@ typedef struct
 } NP_FF_DEC, *PNP_FF_DEC;
 
 FFDEC_API int np_ffdec_init(NPFFDEC_ID id);
-FFDEC_API int ffdec_frame(NP_FF_DEC pff,unsigned char* bs,int len);
-FFDEC_API void ffdec_destroy(NP_FF_DEC pff);
+FFDEC_API int np_ffdec_frame(NP_FF_DEC pff,unsigned char* bs,int len);
+FFDEC_API void np_ffdec_destroy(NP_FF_DEC pff);
